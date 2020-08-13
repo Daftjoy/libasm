@@ -13,11 +13,14 @@ compare:
             mov    dl, BYTE [rdi + rcx]
             cmp     dl,0
             jz     null_str
-            sub     dl, BYTE [rsi + rcx]
+			mov 	dl, BYTE [rsi + rcx]
+			cmp		dl, 0
+			jz		greater_str
+            sub     dl, BYTE [rdi + rcx]
             cmp     dl,0
             jz      increment
-            jl     minor_str
-            jg      greater_str
+            jl		greater_str
+            jg      minor_str
 null_str:
             sub     dl, BYTE [rsi + rcx]
             cmp     dl,0

@@ -23,7 +23,7 @@ fclean:				clean
 re:					fclean $(NAME)
 
 test:			$(NAME)
-				$(GC) $(FLAGS) -L. -lasm -o $(TEST) main.c
+				$(GC) $(FLAGS) -L. -lasm -o $(TEST) main.c checker.c
 				./$(TEST) < Makefile
 	
 .PHONY:			clean fclean re
