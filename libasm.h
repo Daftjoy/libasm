@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libasm.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amaresp <amaresp@student.42.fr>            +#+  +:+       +#+        */
+/*   By: antmarti <antmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/08/13 17:42:52 by amaresp           #+#    #+#             */
-/*   Updated: 2020/08/13 22:31:52 by amaresp          ###   ########.fr       */
+/*   Created: 2020/08/14 13:41:27 by antmarti          #+#    #+#             */
+/*   Updated: 2020/08/14 14:24:48 by antmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void				check_strlen();
 void				check_strcpy();
 void				clear_buffer(char *buffer, int size);
 void				check_strcmp();
+void				check_read_aux(int fd, int ret, char *buff1);
 
 #endif
